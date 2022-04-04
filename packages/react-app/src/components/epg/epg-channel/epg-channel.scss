@@ -1,0 +1,30 @@
+.channels {
+    background-color: black;
+    color: white;
+    z-index: 3;
+
+    &__logo-wrapper {
+        display: flex;
+        min-height: 120px;
+        position: relative;
+
+        justify-content: center;
+        align-items: center;
+
+        background-color: #252525;
+        color: white;
+        border-top: 1px solid #383838;
+        border-right: 1px solid #383838;
+
+    }
+
+    &__logo-image {
+        width: 60%;
+        height: auto;
+    }
+
+}
+
+/*.channels * {
+    box-sizing: border-box;
+}*/

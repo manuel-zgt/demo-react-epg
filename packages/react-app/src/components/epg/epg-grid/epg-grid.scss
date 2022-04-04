@@ -1,0 +1,73 @@
+.epg__container {
+    background-color: #333;
+    color: white;
+
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+
+    .epg {
+        display: grid;
+        max-height: 100%;
+        max-width: 100%;
+        overflow: auto;
+        border: 1px solid #383838;
+
+        grid-template-columns: 10% auto;
+        /*border-radius: 10px;*/
+
+        &__timeline {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        &__channels {
+            position: sticky;
+            left: 0;
+            z-index: 3;
+        }
+
+        &__date {
+            position: sticky;
+            left: 0;
+            top: 0;
+            z-index: 4;
+            border: 1px solid #383838;
+            border-bottom: none;
+            background-color: #333;
+        }
+
+        &__programs {
+            position: relative;
+        }
+    }
+
+
+}
+
+div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .epg__container {
+        .epg {
+            grid-template-columns: 35% auto;
+        }
+    }
+}

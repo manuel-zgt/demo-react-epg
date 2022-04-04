@@ -1,0 +1,76 @@
+
+.schedules {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #181818FF;
+
+    .active {
+        background-color: #333;
+        color: white;
+    }
+
+    &__programs {
+        display: flex;
+        border-top: 1px solid #383838;
+        border-right: 1px solid #383838;
+        box-sizing: border-box;
+    }
+
+    &__programs:last-child {
+        border-bottom: 1px solid #383838;
+    }
+
+    &__header {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__program {
+        text-align: left;
+        padding-left: 0.5em;
+        border-bottom: none;
+        border-right: 1px solid #383838;
+        overflow: hidden;
+    }
+
+    &__program:hover {
+        background-color: #3C3C3CFF;
+        color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    &__program-active {
+        background-color: #3C3C3CFF;
+        color: #f1f1f1;
+    }
+}
+
+.schedules * {
+    box-sizing: border-box;
+}
+
+
+.time-bookmark {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background-color: #cc9103;
+}
+
+.time-bookmark:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: -40px;
+    left: -2px;
+    width: 5px;
+    height: 40px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #cc9103;
+    z-index: 2;
+}

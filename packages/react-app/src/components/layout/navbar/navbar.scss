@@ -1,0 +1,21 @@
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    /*    position: fixed;
+        bottom: 0;*/
+    width: 100%;
+    min-height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        color: white;
+        font-size: 1.80rem;
+    }
+
+    &__home {
+
+    }
+}
