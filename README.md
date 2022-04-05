@@ -18,7 +18,8 @@ EPG with React
 ---
 ## EPG & Details page
 
-
+![alt text](https://raw.githubusercontent.com/manuel-zgt/demo-react-epg/master/images/epg-page.png "epg page")
+![alt text](https://raw.githubusercontent.com/manuel-zgt/demo-react-epg/master/images/details-page.png "details page")
 ---
 
 ## Mock-API:
